@@ -1,5 +1,5 @@
 //COEFICIENTES DE FOURIER POR INTEGRACIÓN NUMÉRICA
-//La siguiente función devuelve los coeficientes de Fourier,'a0', 'An' & 'Bn'
+//La siguiente función devuelve los coeficientes de Fourier,'a0', 'Ak' & 'Bk' y a0_num, ak_num, bk_num
 //El usuario debe ingresar los siguientes argumentos:
 
 //L= Periodicidad de la función f que será aproximada mediante series de Fourier.
@@ -11,8 +11,9 @@
 //PARA FIJAR NUESTRA FUNCION INTRODUCIMOS EN CONSOLA: deff("a=f(x)","a= (x^2)*cos(48*x)")
 
 funcprot(0);
-function [a0,A,B,a0_num,A_num,B_num]=T1B_fourierplot(L,k,f) //falta agregar M cuando esté lista la función de integración numérica
-    clf(); //Limpia los gráficos https://help.scilab.org/docs/5.3.3/en_US/clf.html
+//function [a0,A,B,a0_num,A_num,B_num]=T1B_fourierplot(L,k,f,M) //cuando esté lista la función de integración numérica
+function [a0,A,B]=T1B_fourierplot(L,k,f) 
+    clf(); //Limpia los gráficos https ://help.scilab.org/docs/5.3.3/en_US/clf.html
     for i=1:k
         function ak=f1(x,f)
             ak=f(x)*cos(i*%pi*x/L);
