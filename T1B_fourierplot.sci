@@ -69,7 +69,7 @@ function [a0,A,B]=T1B_fourierplot(L,k,f)
             series=series+A(i)*cos(i*%pi*x/L)+B(i)*sin(i*%pi*x/L);
         end
     endfunction
-    x=-L:0.1:L;
+    x=-2L:0.1:2L;
     plot(x,solution(x));
 
 endfunction
