@@ -1,8 +1,6 @@
-//Fourier Series Coefficients
+//Coeficientes de Series de Fourier
 //La siguiente función devuelve los coeficientes de Fourier,'a0', 'An' & 'Bn'
-//
 //El usuario necesita proveer los siguientes argumentos
-//
 //L= Periodicidad de la función f que será aproximada mediante series de Fourier.
 //n= número de Coeficientes de Fourier que se quieren calcular
 //f= función a ser aproximada mediante series de Fourier
@@ -11,6 +9,7 @@
 //Algunas pautas para definir f: El programa integra la función f desde -L a L así que asegurate de que la función esté definida en ese intervalo
 //Consultado en:  https://en.wikipedia.org/wiki/Fourier_series
 //PARA FIJAR NUESTRA FUNCION INTRODUCIMOS EN CONSOLA: deff("a=f(x)","a= (x^2)*cos(48*x)")
+
 funcprot(0);
 function [a0, A, B]=T1B_fourier(L, k, f)
     a0=1/l*intg(-L,L,f,1e-2); //CAMBIAR POR INTEGRACION NUMERICA
