@@ -1,19 +1,18 @@
-//Fourier Series Coefficients
+//COEFICIENTES DE FOURIER POR INTEGRACIÓN NUMÉRICA
 //La siguiente función devuelve los coeficientes de Fourier,'a0', 'An' & 'Bn'
-//
-//El usuario necesita proveer los siguientes argumentos
-//
+//El usuario debe ingresar los siguientes argumentos:
+
 //L= Periodicidad de la función f que será aproximada mediante series de Fourier.
 //n= número de Coeficientes de Fourier que se quieren calcular
 //f= función a ser aproximada mediante series de Fourier
 //M = número de dt en los que dividir el intervalo
 
-//Algunas pautas para definir f: El programa integra la función f desde -L a L así que asegurate de que la función esté definida en ese intervalo
-//Consultado en:  https://en.wikipedia.org/wiki/Fourier_series
+//Consultado en:  https://www.bragitoff.com/2016/03/calculating-fourier-series-and-plotting-it-scilab/
 //PARA FIJAR NUESTRA FUNCION INTRODUCIMOS EN CONSOLA: deff("a=f(x)","a= (x^2)*cos(48*x)")
+
 funcprot(0);
 function [a0,A,B]=T1B_fourierplot(L,k,f)
-    clf();
+    clf(); //Limpia los gráficos https://help.scilab.org/docs/5.3.3/en_US/clf.html
     a0=1/L*intg(-L,L,f,.000000001); //CAMBIAR POR INTEGRACION NUMERICA
     for i=1:k
         function ak=f1(x,f)
