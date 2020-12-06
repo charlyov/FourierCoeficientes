@@ -1,4 +1,6 @@
 //Coeficientes de Series de Fourier
+
+
 //La siguiente función devuelve los coeficientes de Fourier,'a0', 'An' & 'Bn'
 //El usuario necesita proveer los siguientes argumentos
 //L= Periodicidad de la función f que será aproximada mediante series de Fourier.
