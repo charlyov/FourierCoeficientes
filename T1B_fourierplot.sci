@@ -53,7 +53,7 @@ function [a0,A,B]=T1B_fourierplot(L,k,f)
 //    end
 //        disp(a0_num)
 //    
-//    //----suma de riemann:
+//    //----suma de riemann: 
 //    
 //    a0_num = (1/L)*(sum(f(m))*dt); 
 //    disp(a0_num)
